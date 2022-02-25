@@ -1,0 +1,32 @@
+
+n=int(input("enter n")) 
+l=[]
+p=[]
+ng=[]
+
+for i in range(n):
+    x=int(input()) 
+    l.append(x)
+print(l) 
+x=0
+for i in range(n):
+    if l[i]>0:
+           p.append(l[i]) 
+for i in range(x,n):
+    if l[i]<0:
+           ng.append(l[i])
+           x=x+1
+print(p,'',ng) 
+
+
+Output
+
+enter n5 
+-1
+6
+8
+-5
+7
+[-1, 6, 8, -5, 7]
+[6, 8, 7]  [-1, -5]
+> 
